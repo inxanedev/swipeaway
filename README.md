@@ -7,6 +7,21 @@ Nothing is permanently deleted. **Delete** moves the item into a `swipeaway-junk
 inside the folder you picked, and **Manual** moves it into `swipeaway-manual`. You review and
 empty those folders yourself whenever you're ready.
 
+## Screenshots
+
+![Reviewing a photo in SwipeAway](docs/screenshots/review.png)
+
+<table>
+  <tr>
+    <td><img src="docs/screenshots/welcome.png" alt="Welcome screen" width="100%"></td>
+    <td><img src="docs/screenshots/video.png" alt="Video preview with filmstrip" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/folder.png" alt="Read-only folder browser" width="100%"></td>
+    <td><img src="docs/screenshots/summary.png" alt="Cleanup summary" width="100%"></td>
+  </tr>
+</table>
+
 ## Features
 
 - Previews images, text and code, video thumbnails/filmstrips, audio, fonts, ZIP contents,

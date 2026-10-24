@@ -310,6 +310,7 @@ fn entry_section(ui: &mut Ui, title: &str, entries: &[Entry], color: Color32) {
         .corner_radius(CornerRadius::same(13))
         .inner_margin(egui::Margin::same(14))
         .show(ui, |ui| {
+            ui.set_width(ui.available_width());
             egui::CollapsingHeader::new(
                 RichText::new(format!("{title}  ·  {}", entries.len()))
                     .font(theme::semibold(13.0))
