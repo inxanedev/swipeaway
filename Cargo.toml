@@ -1,0 +1,60 @@
+[package]
+name = "swipeaway"
+version = "0.1.0"
+edition = "2024"
+description = "A slick folder cleanup utility - keep, delete, or set aside files one swipe at a time."
+license = "MIT"
+repository = "https://github.com/inxanedev/swipeaway"
+
+[dependencies]
+eframe = { version = "0.37", default-features = false, features = [
+    "accesskit",
+    "clipboard",
+    "default_fonts",
+    "persistence",
+    "wgpu",
+] }
+egui = "0.37"
+image = { version = "0.25", default-features = false, features = [
+    "bmp",
+    "dds",
+    "gif",
+    "hdr",
+    "ico",
+    "jpeg",
+    "png",
+    "pnm",
+    "qoi",
+    "tga",
+    "tiff",
+    "webp",
+] }
+rfd = "0.17"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+dirs = "7"
+dunce = "1"
+zip = { version = "9", default-features = false }
+lofty = "0.25"
+open = "5"
+raw-window-handle = "0.6"
+fontdue = "0.9"
+
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.62", features = [
+    "Win32_Foundation",
+    "Win32_Graphics_Gdi",
+    "Win32_System_Com",
+    "Win32_UI_Shell",
+] }
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+strip = "symbols"
+
+
+[build-dependencies]
+winresource = "0.1"
