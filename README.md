@@ -7,6 +7,10 @@ Nothing is permanently deleted. **Delete** moves the item into a `swipeaway-junk
 inside the folder you picked, and **Manual** moves it into `swipeaway-manual`. You review and
 empty those folders yourself whenever you're ready.
 
+## Download
+
+Grab the latest Windows x64 executable from the [Releases page](https://github.com/inxanedev/swipeaway/releases/latest).
+
 ## Screenshots
 
 ![Reviewing a photo in SwipeAway](docs/screenshots/review.png)
